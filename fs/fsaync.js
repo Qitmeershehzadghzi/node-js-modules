@@ -52,3 +52,18 @@ else{
 //         console.log('file has been deleted')
 //     }
 //     })
+
+// rename file nama
+
+const newfilename = 'updatedfsasync.txt';
+const newfilepath =path.join(__dirname,newfilename)
+const renamfile =fs.rename(filePAth,newfilepath,(err)=>{
+if(err){
+    console.error(err);
+    
+}
+else{
+    console.log('file has been renamed')
+}
+})
+console.log('file new name succesfull',renamfile);
