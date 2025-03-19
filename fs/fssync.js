@@ -3,23 +3,24 @@ const fs =require('fs')
 const path =require('path')
 const filename ='test.txt'
 const filepath = path.join(__dirname, filename);
-// const writefile =fs.writeFileSync(filepath,'hello world updated','utf-8')	
-// console.log(
 //     writefile
-// );
+const writefile =fs.writeFileSync(filepath,'hello world updated','utf-8')	
+console.log(
+    writefile
+);
 // read file sync
 
 
-// const readfile = fs.readFileSync(filepath,'utf-8')
-// console.log(readfile);
+const readfile = fs.readFileSync(filepath,'utf-8')
+console.log(readfile);
 
 // updated data
-// const updateddata =fs.appendFileSync(filepath,'\nupdated data','utf-8')
-// console.log(  updateddata);
+const updateddata =fs.appendFileSync(filepath,'\nupdated data','utf-8')
+console.log(  updateddata);
 
 // delete data
-// const deletedata =fs.unlinkSync(filepath)
-// console.log(deletedata);
+const deletedata =fs.unlinkSync(filepath)
+console.log(deletedata);
 // rename filename
 
 
